@@ -1,0 +1,55 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+body{
+    position: relative;
+    background-image: linear-gradient(to right , rgb(20, 20, 189), yellow, black, green, red);
+}
+
+#fundo{
+    position: relative;
+    background: url(imagens/Início.png);
+    width: 1300px;
+    height: 760px;
+}
+
+main{
+    color: aliceblue;
+    text-align: center;
+}
+
+main h1{
+    font-size: 5em;
+    padding-top: 190px;
+}
+
+main p{
+    padding-top: 14px;
+    font-size: 2em;
+}
+
+
+section{
+
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1em;
+    margin-top: 45px;
+    float: left;
+    margin-left: 170px;
+}
+
+li #logo{
+    background: url(imagens/Icon55.png) no-repeat;
+    width: 55px;
+    height: 55px;
+    margin-top: 25px;
+}
