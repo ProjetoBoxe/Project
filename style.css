@@ -1,5 +1,14 @@
+:root{
+    --text: #F2F2F3;
+    --background: #0B0B0D;
+}
+
 *{
     margin: auto;
+}
+
+html{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
@@ -12,7 +21,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1rem;
 }
 
 body #topo{
@@ -35,7 +44,7 @@ li{
 }
 
 li a{
-    color: aliceblue;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -44,17 +53,34 @@ main{
 }
 
 p{
-    font-size: 2em;
+    font-size: 1.5rem;
     width: 100%;
     height: 100%;
     text-align: center;
-    color: aliceblue;
+    color: var(--text);
 }
 
 h1{
-    font-size: 4em;
+    font-size: 6em;
     text-align: center;
-    color: aliceblue;
+    color: var(--text);
+    font-weight: bold;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight:bold;
+    text-align: center;
+    color:var(--text);
 }
 
 
+.logo-olim{
+    width: 86px;
+    height: 83px;
+}
+
+.header-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
