@@ -1,55 +1,60 @@
 *{
     margin: auto;
-    padding: auto;
 }
+
 body{
-    position: relative;
-    background-image: linear-gradient(to right , rgb(20, 20, 189), yellow, black, green, red);
+    background-image: url(imagens/Início.png);
+    position: flex;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 1.3em;
 }
 
-#fundo{
-    position: relative;
-    background: url(imagens/Início.png);
-    width: 1300px;
-    height: 760px;
-}
-
-main{
-    color: aliceblue;
+body #topo{
+    margin: 0px;
     text-align: center;
+    padding: 50px;
 }
-
-main h1{
-    font-size: 5em;
-    padding-top: 190px;
-}
-
-main p{
-    padding-top: 14px;
-    font-size: 2em;
-}
-
 
 section{
 
-    height: 100px;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+li{
+    float: left;
     list-style: none;
 }
 
-section li a{
-    text-decoration: none;
+li a{
     color: aliceblue;
-    font-size: 1em;
-    margin-top: 45px;
-    float: left;
-    margin-left: 170px;
+    text-decoration: none;
 }
 
-li #logo{
-    background: url(imagens/Icon55.png) no-repeat;
-    width: 55px;
-    height: 55px;
-    margin-top: 25px;
+main{
+   margin-top: 158px;
 }
+
+p{
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: aliceblue;
+}
+
+h1{
+    font-size: 4em;
+    text-align: center;
+    color: aliceblue;
+}
+
+
