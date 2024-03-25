@@ -1,56 +1,59 @@
 *{
     margin: auto;
+    
+}
+body, html{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    color: aliceblue;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-image: url(imagens/Início.png);
-    position: flex;
+
+/* PARTE QUE ESTÁ O INICIO */
+#inicio{
+    background-image: url(imagens/Início1280x768.png);
     height: 100%;
     margin: 0;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     text-decoration: none;
+}
+#topo{
+    margin: 0;
+    padding: 50px 0px;
     font-size: 1.3em;
 }
-
-body #topo{
-    margin: 0px;
-    text-align: center;
-    padding: 50px;
-}
-
-section{
-
+#topo ul li{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-li{
+    text-align: center;
     float: left;
     list-style: none;
-}
+    position: relative;
 
+}
 li a{
     color: aliceblue;
     text-decoration: none;
 }
-
 main{
    margin-top: 158px;
 }
-
-p{
+main p{
     font-size: 2em;
     width: 100%;
     height: 100%;
     text-align: center;
     color: aliceblue;
 }
-
 h1{
     font-size: 4em;
     text-align: center;
@@ -58,3 +61,81 @@ h1{
 }
 
 
+
+/* PARTE QUE ESTA AS REGRAS */
+#regra{
+    position: relative;
+    height: auto;
+    background-color: #0B0B0D;
+    border: 1px solid #0B0B0D;
+    text-align: center;
+}
+#meio{
+    display: flex;
+}
+#regra h2{
+    margin: 50px 0px;
+}
+#regra .conteudo{
+    margin: 50px 80px;
+}
+
+#regra #meio li{
+    position: relative;
+}
+#regra #meio li img{
+    display: block;
+    margin: 0;
+    border-radius: 15px;
+}
+#regra #meio p{
+    position: absolute;
+    width: 100%;
+    top: 27%;
+}
+
+
+
+
+
+/* A PARTE QUE ESTÁ A HISTORIA */
+#historia{
+    height: auto;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #0B0B0D;
+    background-color: #0B0B0D;
+
+}
+
+#historia h2{
+    text-align: center;
+    margin: 50px 0px;
+}
+#historia ul{
+    margin: 50px 0px;
+}
+#historia ul li{
+    text-indent: 20px;
+    display: block;
+    text-align: center;
+}
+#historia ul .conteudo{
+    margin: 50px 80px;
+}
+
+
+
+
+
+/* FOOTER */
+#footer{
+    height: 100%;
+    background-image: url(imagens/Background\ footer1306.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
