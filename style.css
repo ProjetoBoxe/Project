@@ -62,6 +62,7 @@ h1{
 
 
 
+
 /* PARTE QUE ESTA AS REGRAS */
 #regra{
     position: relative;
@@ -79,10 +80,6 @@ h1{
 #regra .conteudo{
     margin: 50px 80px;
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 #regra #meio li{
     position: relative;
 }
@@ -112,7 +109,6 @@ h1{
     background-color: #0B0B0D;
 
 }
-
 #historia h2{
     text-align: center;
     margin: 50px 0px;
