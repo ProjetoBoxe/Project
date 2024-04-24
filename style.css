@@ -1,200 +1,264 @@
-:root{
-    --text: #F2F2F3;
-    --background: #0B0B0D;
+:root {
+  --text: #f2f2f3;
+  --background: #0b0b0d;
 }
-*{
-    margin: auto;
+* {
+  margin: auto;
 }
 html {
-    scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
-html{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    scroll-behavior: smooth;
-    color:var(--text);
-    overflow-x:hidden;
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--text);
+  overflow-x: hidden;
 }
-h1{
-    font-size: 91px;
-    font-weight: bold;
+h1 {
+  font-size: 91px;
+  font-weight: bold;
 }
-h2{
-    font-size: 64px;
-    font-weight: bold;
-    text-align: center;
+h2 {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
 }
-h3{
-    font-size: 32px;
+h3 {
+  font-size: 32px;
 }
-h4{
-    font-size: 24px;
+h4 {
+  font-size: 24px;
 }
-p{
-    font-size: 24px;
+p {
+  font-size: 24px;
 }
-body, html{
-    background-color: #0B0B0D;
-    position: relative;
-    height: 100%;
-    margin: 0;
-    color: aliceblue;
+body,
+html {
+  background-color: #0b0b0d;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  color: aliceblue;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 /* PARTE DO NAV  */
-#topo ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#topo ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#topo ul li{
-    position: relative;
-    display: contents;
+#topo ul li {
+  position: relative;
+  display: contents;
 }
 
 /* PARTE QUE ESTÁ O INICIO */
-#inicio{
-    background: url(imagens/Background\ Paris.png);
-    height: 100%;
-    margin: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-decoration: none;
+#inicio {
+  background: url(imagens/Background\ Paris.png);
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
 }
-#topo{
-    padding: 50px 0px;
+#topo {
+  padding: 50px 0px;
 }
-#topo ul li{
-    width: 100%;
-    text-align: center;
-    float: left;
-    list-style: none;
-    position: relative;
+#topo ul li {
+  width: 100%;
+  text-align: center;
+  float: left;
+  list-style: none;
+  position: relative;
 }
-li a{
-    color: aliceblue;
-    text-decoration: none;
+li a {
+  color: aliceblue;
+  text-decoration: none;
 }
-main{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+main {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-
 
 /* PARTE QUE ESTA AS REGRAS */
-#regra{
-    position: relative;
-    height: auto;
-    text-align: center;
+#regra {
+  position: relative;
+  height: auto;
+  text-align: center;
 }
-#meio{
-    display: flex;
+#meio {
+  display: flex;
 }
-#regra h3{
-    margin: 50px 0px;
+#regra h3 {
+  margin: 50px 0px;
 }
-#regra .conteudo{
-    margin: 50px 80px;
+#regra .conteudo {
+  margin: 50px 80px;
 }
-#regra #meio li{
-    position: relative;
+#regra #meio li {
+  position: relative;
 }
-#regra #meio li img{
+#regra #meio li img {
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+#regra #meio .centralizado {
+  position: absolute;
+  width: 100%;
+  top: 27%;
+}
+@media (max-width: 800px) {
+  #meio {
     display: block;
-    margin: auto;
-    border-radius: 15px;
+  }
+  #meio li {
+    margin-top: 10px;
+  }
+  .falta {
     margin-bottom: 100px;
+  }
 }
-#regra #meio p{
-    position: absolute;
-    width: 100%;
-    top: 27%;
-}
-@media(max-width: 800px) {
-    #meio{
-     display: block;
-    }
-    #meio li{
-        margin-top: 10px;
-    }
-    .falta{
-        margin-bottom: 100px;
-    }
-}
-
-
-
 
 /* A PARTE QUE ESTÁ A HISTORIA */
-#historia{
-    height: auto;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #0B0B0D;
-    background-color: #0B0B0D;
-
+#historia {
+  height: auto;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #0b0b0d;
+  background-color: #0b0b0d;
 }
-#historia h3{
-    text-align: center;
-    margin: 50px 0px;
+#historia h3 {
+  text-align: center;
+  margin: 50px 0px;
 }
-#historia ul{
-    margin: 50px 0px;
+#historia ul {
+  margin: 50px 0px;
 }
-#historia ul li{
-    text-indent: 20px;
-    display: block;
-    text-align: center;
+#historia ul li {
+  text-indent: 20px;
+  display: block;
+  text-align: center;
 }
-#historia ul .conteudo{
-    margin: 50px 80px;
+#historia ul .conteudo {
+  margin: 50px 80px;
 }
-#historia ul li img{
-    border-radius: 15px;
+#historia ul li img {
+  border-radius: 15px;
 }
-
 
 /* FOOTER */
-#footer{
-    height: 100%;
-    background-image: url(imagens/Background\ FooterParis.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+#footer {
+  height: 100%;
+  background-image: url(imagens/Background\ FooterParis.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 footer {
-    width: 100%;
-    text-align: end;
-    position: absolute;
-    bottom: 0;
+  width: 100%;
+  text-align: end;
+  position: absolute;
+  bottom: 0;
+}
+
+footer li {
+  margin-right: 80px;
+  padding-bottom: 25px;
+}
+footer p {
+  text-align: center;
+  word-spacing: 75px;
+  margin-left: -195px;
+}
+footer ul li a {
+  cursor: pointer;
+}
+
+/*POP-UP*/
+.stylepop {
+  position: absolute;
+  height: 79.8%;
+  width: 100%;
+  transform: translate(-50%);
+  border: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.styledentropop {
+  width: 80%;
+  height: 80%;
+  border-radius: 14px;
+  box-shadow: 0 0 1em rgb(0 0 0/ 1);
+  border: none;
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 4%;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 4%;
+  }
+}
+#popfalta {
+  background-image: url(imagens/PopFaltas.png);
+}
+#popfalta p{
 
 }
 
-footer li{
-    margin-right: 80px;
-    padding-bottom: 25px;
+#popfalta nav {
+  margin-top: 1%;
+  font-size: 20px;
 }
-footer p{
-    text-align: center;
-    word-spacing: 75px;
-    margin-left: -195px;
+#popfalta nav li {
+  margin-top: 1%;
+  list-style: disc;
 }
-footer ul li a{
-    cursor: pointer;
+#fechar {
+  text-align: right;
+}
+#fechar button {
+  background-color: transparent;
+  appearance: none;
+  color: aliceblue;
+}
+
+#popgolpe {
+  background-image: url(imagens/popgolpe1227x778.png);
+  text-align: justify;
+}
+#popgolpe h2 {
+  text-align: justify;
+}
+
+#popgolpe p {
+  width: 80%;
+  font-size: 10px;
 }

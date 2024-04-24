@@ -1,106 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="falta.js" defer></script>
+
     <title>Olímpiadas</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <!-- PARTE INICIAL -->
-    <section id="inicio"> 
-        <div id="topo">
-            <ul>
-                <li>
-                        <a href="#historia"><h4>História</h4></a>
-                </li>
-                <li>
-                        <a href="#regra"><h4>Regras</h4></a>
-                </li>
-                <li>
-                        <a href="index.html"><img src="imagens/image 9.png" alt=""></a>
-                </li>
-                <li>
-                        <h4>Colocações</h4>
-                </li>
-                <li>
-                        <a href="#"><img src="imagens/Group18.png" alt=""></a>
-                </li>
-            </ul>
-        </div>
-        <main>
-            <h1>
-                Paris 2024
-            </h1>
-            <h2>
-                Boxe
-            </h2>
-        </main>
-    </section> 
+    <section id="inicio">
+      <div id="topo">
+        <ul>
+          <li>
+            <a href="#historia"><h4>História</h4></a>
+          </li>
+          <li>
+            <a href="#regra"><h4>Regras</h4></a>
+          </li>
+          <li>
+            <a href="index.html"><img src="imagens/image 9.png" alt="" /></a>
+          </li>
+          <li>
+            <h4>Colocações</h4>
+          </li>
+          <li>
+            <a href="#"><img src="imagens/Group18.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <main>
+        <h1>Paris 2024</h1>
+        <h2>Boxe</h2>
+      </main>
+    </section>
     <!-- FIM DA PARTE INICIAL -->
 
     <!-- PARTE DAS REGRAS -->
-    <section id="regra"> 
-        <h3>Regras</h3>
-        <p class="conteudo">No boxe, dois atletas (boxeadores) lutam num ringue, utilizando apenas as mãos para atacar e defender. O objetivo principal é tentar nocautear o adversário com um soco preciso e, ao mesmo tempo, evitar ser atingido.</p>
-        
-        <div id="meio">
-            <li class="golpe">
-                <p>Golpe</p>
-                <img src="imagens/golpes.png" alt="Golpes">
-            </li>
+    <section id="regra">
+      <h3>Regras</h3>
+      <p class="conteudo">
+        No boxe, dois atletas (boxeadores) lutam num ringue, utilizando apenas
+        as mãos para atacar e defender. O objetivo principal é tentar nocautear
+        o adversário com um soco preciso e, ao mesmo tempo, evitar ser atingido.
+      </p>
 
-            <li class="ringue">
-                <p>Ringue/Equipamento</p>
-                <img src="imagens/ring.png" alt="Ringe/Equipamentos">
-            </li>
+      <div id="meio">
+        <li class="golpe">
+          <p class="centralizado">Golpe</p>
 
-            <li class="falta"> 
-                <p>Faltas</p>
-                <img src="imagens/falta.png" alt="Faltas">
-            </li>
-        </div>
-    </section> 
+          <button id="botaogolpe" class="stylepop"></button>
+          <!--BOTÃO DOS GOLPES-->
+          <dialog id="popgolpe" class="styledentropop">
+            <nav id="fechar"><button>x</button></nav>
+            <ul>
+              <h2>
+                Jab ou Reto com a mão adiantada / Direto ou Reto com a mão
+                atrasada
+              </h2>
+              <p>
+                O jab (reto da mão daiantada) seve para medir a distância e/ou
+                para "cegar" ou abrir a a guarda do adversário para o Direto
+                (reto da mão atrasada), por este motivo não deve existir pausa
+                entre os golpes, assim que quando o primeiro atinge o alvo ou
+                cumpre sua função, o segundo golpe já estar sendo lançado com
+                força. <br />
+                Recorando que ambos os golpes devem ser lançados como um
+                "chicote", ou seja se desenrolando por toda a cadeia cinemática,
+                partindo do solo e ao chegar em seu alvo deve retornar
+                rapidamente a posição inicial da parada de combate (guarda).
+              </p>
+              <h2>Cruzado</h2>
+              <p>
+                O Cruzado no boxe é um dos golpes básicos, é relativamente fácil
+                de executar, pode ser preparada de muitas maneiras e também pode
+                ser usada sozinha
+                <br /><br />
+                A força da greve é gerada pela reviravolta no corpo. Em primeiro
+                lugar, dirija o pe de trás para o chão, gere a força através de
+                seus quadris e incline-se ligeiramente para frente distribuindo
+                o peso de trás para frente. Não conduza a mão primeira, a cruz
+                começa com a rotação do corppo e a mão segue e distribui a força
+                gerada através do corpo. <br />
+                É assim que se dá um soco mais forte.
+              </p>
+            </ul>
+          </dialog>
+          <img src="imagens/golpes.png" alt="Golpes" />
+        </li>
+
+        <li class="ringue">
+          <p class="centralizado">Ringue/Equipamento</p>
+
+          <button class="stylepop"></button>
+          <!--BOTÃO DO RINGUE-->
+
+          <img src="imagens/ring.png" alt="Ringe/Equipamentos" />
+        </li>
+
+        <li class="falta">
+          <p class="centralizado">Faltas</p>
+
+          <button id="botaofalta" class="stylepop"></button>
+          <!--BOTÃO DAS FALTAS-->
+
+          <img src="imagens/falta.png" alt="Faltas" />
+
+          <dialog id="popfalta" class="styledentropop">
+            <nav id="fechar">
+              <button>x</button>
+            </nav>
+
+            <h2>Faltas</h2>
+            <nav>
+              <p>Algumas ações são impedidas por normas gerais. São elas:</p>
+              <li>Golpear o adversário abaixo da cintura;</li>
+              <li>Atacar o adversário quando ele estiver caído;</li>
+              <li>Morder a orelha;</li>
+              <li>Atacar com a parte interna da mão, antebraço ou cotovelo;</li>
+              <li>Agarrar-se nas cordas de limite;</li>
+              <li>Agarrar o adversário em excesso.</li>
+            </nav>
+          </dialog>
+        </li>
+      </div>
+    </section>
     <!-- FIM DA PARTE DAS REGRAS-->
-    
 
     <!-- PARTE DA HITORIA -->
-    <section id="historia"> 
-        <h3>Historia</h3>
-        <ul> 
-            <li>
-                <img src="imagens/image 8.png" alt="Lutador">
-            </li>
+    <section id="historia">
+      <h3>Historia</h3>
+      <ul>
+        <li>
+          <img src="imagens/image 8.png" alt="Lutador" />
+        </li>
 
-            <li class="conteudo">
-                <p>O boxe, uma arte milenar de combate, tem suas raízes profundamente entrelaçadas com a história da humanidade. Remontando a civilizações antigas, os registros de combates corpo a corpo encontram-se em diversas culturas ao longo dos séculos. No entanto, o boxe moderno, como o conhecemos hoje, começou a ganhar forma no século XVIII na Inglaterra, evoluindo de uma prática brutal e desorganizada para um esporte regulamentado, com regras estabelecidas para garantir a segurança dos competidores.
-                </p>
-            </li>
+        <li class="conteudo">
+          <p>
+            O boxe, uma arte milenar de combate, tem suas raízes profundamente
+            entrelaçadas com a história da humanidade. Remontando a civilizações
+            antigas, os registros de combates corpo a corpo encontram-se em
+            diversas culturas ao longo dos séculos. No entanto, o boxe moderno,
+            como o conhecemos hoje, começou a ganhar forma no século XVIII na
+            Inglaterra, evoluindo de uma prática brutal e desorganizada para um
+            esporte regulamentado, com regras estabelecidas para garantir a
+            segurança dos competidores.
+          </p>
+        </li>
 
-            <li class="conteudo">
-                <p>O boxe alcançou destaque internacional com sua inclusão nos Jogos Olímpicos da Antiguidade, sendo uma das disciplinas esportivas mais prestigiadas. Após um período de ausência, o boxe foi reintroduzido nos Jogos Olímpicos modernos em St. Louis, em 1904, marcando seu retorno triunfante ao cenário esportivo mundial. Desde então, o boxe olímpico tem proporcionado momentos memoráveis, destacando talentos que mais tarde brilhariam nos ringues profissionais.</p>
-            </li>
-        </ul>
-
-    </section> 
+        <li class="conteudo">
+          <p>
+            O boxe alcançou destaque internacional com sua inclusão nos Jogos
+            Olímpicos da Antiguidade, sendo uma das disciplinas esportivas mais
+            prestigiadas. Após um período de ausência, o boxe foi reintroduzido
+            nos Jogos Olímpicos modernos em St. Louis, em 1904, marcando seu
+            retorno triunfante ao cenário esportivo mundial. Desde então, o boxe
+            olímpico tem proporcionado momentos memoráveis, destacando talentos
+            que mais tarde brilhariam nos ringues profissionais.
+          </p>
+        </li>
+      </ul>
+    </section>
     <!-- FIM DA PARTE DE HISTORIA -->
 
     <!-- PARTE DO RODA PÉ-->
-    <section id="footer"> 
+    <section id="footer">
+      <footer>
+        <ul>
+          <p>| Sobre</p>
 
-        <footer>
-            <ul>
-
-                    <p>|   Sobre</p>
-
-                <li>
-                    <a href="#inicio"><img src="imagens/Vector.png" alt=""></a>
-                </li>
-            </ul>
-        </footer>
-    </section> 
+          <li>
+            <a href="#inicio"><img src="imagens/Vector.png" alt="" /></a>
+          </li>
+        </ul>
+      </footer>
+    </section>
     <!-- FIM DA PARTE DE RODA PÉ -->
-
-</body>
+  </body>
 </html>
