@@ -270,6 +270,7 @@ footer ul li a {
   background-color: transparent;
   height: 37px;
   cursor: pointer;
+  border: none;
 }
 #popdireita{
   background-image: url(imagens/popgolpe1227x778.png);
@@ -278,9 +279,15 @@ footer ul li a {
 #popgolpe h2{
   text-indent: 6%;
 }
+@media (max-width: 800px){
+  #popgolpe h2{
+    text-align: center;
+  }
+}
 #boataoesquerdo{
   background-color: transparent;
   position: absolute;
+  border: none;
   cursor: pointer;
-  margin-top: 25px;
+  margin-top: 45px;
 }
