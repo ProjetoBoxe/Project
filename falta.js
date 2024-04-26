@@ -8,7 +8,7 @@ const fechargolpe = document.querySelector("#popgolpe #fechar");
 
 const direita = document.querySelector("#boataodireita");
 const modaldireita = document.querySelector("#popdireita");
-const fechardireita = document.querySelector("#popdireita #fechar")
+const fechardireita = document.querySelector("#popdireita #boataoesquerdo")
 
 button.onclick = function () {
   modalfalta.showModal();
