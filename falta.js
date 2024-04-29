@@ -10,6 +10,10 @@ const direita = document.querySelector("#boataodireita");
 const modaldireita = document.querySelector("#popdireita");
 const fechardireita = document.querySelector("#popdireita #boataoesquerdo")
 
+const ringue = document.querySelector("#botaoringue")
+const modalringue = document.querySelector("#popringue")
+const fecharringue = document.querySelector("#popringue #fechar")
+
 button.onclick = function () {
   modalfalta.showModal();
 };
@@ -32,3 +36,9 @@ fechardireita.onclick = function () {
   modaldireita.close();
 }
 
+ringue.onclick = function () {
+  modalringue.showModal()
+}
+fecharringue.onclick = function () {
+  modalringue.close()
+}
