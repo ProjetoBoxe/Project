@@ -293,3 +293,92 @@ footer ul li a {
 }
 
 
+/* POP RINGUE */
+
+/* /=============== POP-UP ====================/ */
+
+#popringue{
+  background-image: url("imagens/joel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* /================ BODY ====================/ */
+
+.paragraph{
+  width: 850px;
+  
+}
+
+.title{
+  color: white;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+          "wdth" 100;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  position: relative;
+  top: 50px;
+}
+
+.text{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+          "wdth" 100;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  position: relative;
+  top: 50px;
+}
+
+.card{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+          "wdth" 100;
+  width: 185px;
+  height: 46px;
+  border-radius: 8px;
+  background-color: #0E0D12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* /================== CARDS ==============/ */
+
+.card-position1{
+  padding-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+  top: 50px;
+}
+
+.card-position2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+  top: 50px;
+}
