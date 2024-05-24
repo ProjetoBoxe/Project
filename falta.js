@@ -40,6 +40,7 @@ fechardireita.onclick = function () {
 ringue.onclick = function () {
   modalringue.showModal();
 }
+
 fecharringue.onclick = function () {
   modalringue.close();
 }
